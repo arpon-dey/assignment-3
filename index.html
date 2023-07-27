@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -25,6 +26,8 @@
     <title>Assignment-3</title>
   </head>
   <body>
+    <!-- Navbar section -->
+
     <header>
       <header class="md:w-3/4 md:mx-48 px-4 md:px-0">
         <div
@@ -87,9 +90,11 @@
     </header>
 
     <main>
+      <!-- carousel section -->
+
       <section class="relative">
         <div
-          class="carousel md:w-3/4 md:mx-48 h-60 md:h-72 lg:h-full bg-black rounded-lg"
+          class="carousel md:w-3/4 md:mx-48 mx-4 h-60 md:h-72 lg:h-full bg-black rounded-lg"
         >
           <div id="slide1" class="carousel-item relative w-full">
             <img src="images/banner1.png" class="w-full opacity-70" />
@@ -171,18 +176,22 @@
         </div>
       </section>
 
+      <!-- deal of the day -->
+
       <section class="md:w-3/4 md:mx-48 md:my-10">
         <div class="grid grid-rows-1 gap-16">
-          <div class="flex justify-between">
-            <div>
-              <h1 class="text-4xl font-semibold">Deal of the day</h1>
-              <p>
+          <div class="lg:flex justify-between">
+            <div class="lg:text-left sm:text-center md:text-center">
+              <h1 class="text-4xl font-semibold lg:text-left text-center">
+                Deal of the day
+              </h1>
+              <p class="lg:text-left text-center">
                 Contrary to popular belief, is not simply random text. It has
                 roots in a piece of classical <br />
                 Latin literature from 45 BC, making it over 2000 years old.
               </p>
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center lg:ml-0 sm:ml-14 md:ml-32">
               <div class="text-center">
                 <h1 class="text-5xl font-semibold">29</h1>
                 <h1 class="font-semibold">days</h1>
@@ -205,8 +214,10 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-4 gap-4 justify-center items-center">
-            <div class="text-center border-2">
+          <div
+            class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 md:my-0 my-10 justify-center items-center"
+          >
+            <div class="text-center border-2 md:px-0 px-20">
               <img src="images/fruit6.png" alt="" class="w-28 mx-auto" />
               <h2 class="font-semibold my-4">12.90$ - 18.85$</h2>
               <hr />
@@ -220,7 +231,7 @@
               </div>
               <a class="mb-4">Details</a>
             </div>
-            <div class="text-center border-2">
+            <div class="text-center border-2 md:px-0 px-20">
               <img src="images/fruit7.png" alt="" class="w-1/2 mx-auto" />
               <h2 class="font-semibold my-4">12.90$ - 18.85$</h2>
               <hr />
@@ -234,7 +245,7 @@
               </div>
               <a class="mb-4">Details</a>
             </div>
-            <div class="text-center border-2">
+            <div class="text-center border-2 md:px-0 px-20">
               <img src="images/fruit8.png" alt="" class="w-1/2 mx-auto" />
               <h2 class="font-semibold my-4">12.90$ - 18.85$</h2>
               <hr />
@@ -248,7 +259,7 @@
               </div>
               <a class="mb-4">Details</a>
             </div>
-            <div class="text-center border-2">
+            <div class="text-center border-2 md:px-0 px-20">
               <img src="images/fruit9.png" alt="" class="w-1/2 mx-auto" />
               <h2 class="font-semibold my-4">12.90$ - 18.85$</h2>
               <hr />
@@ -266,7 +277,9 @@
         </div>
       </section>
 
-      <section class="rounded-full">
+      <!-- Team section  -->
+
+      <section class="rounded-full md:my-0 my-10">
         <div
           class="hero min-h-screen md:w-3/4 md:mx-48 md:my-10"
           style="background-image: url(images/team.png)"
@@ -281,9 +294,13 @@
                 Latin literature from 45 BC, making it over 2000 years old.
               </p>
             </div>
-            <div class="grid md:grid-cols-4">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2">
               <div class="text-center mx-20">
-                <img src="images/member1.png" alt="" class="w-32 my-4" />
+                <img
+                  src="images/member1.png"
+                  alt=""
+                  class="w-32 md:ml-0 ml-14 mb-4 my-4"
+                />
                 <h1 class="font-semibold">Awlad Hossain</h1>
                 <p>Food expert</p>
                 <div class="flex justify-center items-center mt-3">
@@ -293,7 +310,11 @@
                 </div>
               </div>
               <div class="text-center mx-20">
-                <img src="images/member2.png" alt="" class="w-32 my-4" />
+                <img
+                  src="images/member2.png"
+                  alt=""
+                  class="w-32 md:ml-0 ml-14 mb-4 my-4"
+                />
                 <h1 class="font-semibold">Safia Chowdhury</h1>
                 <p>Food expert</p>
                 <div class="flex justify-center items-center mt-3">
@@ -303,7 +324,11 @@
                 </div>
               </div>
               <div class="text-center mx-20">
-                <img src="images/member3.png" alt="" class="w-32 my-4" />
+                <img
+                  src="images/member3.png"
+                  alt=""
+                  class="w-32 md:ml-0 ml-14 mb-4 my-4"
+                />
                 <h1 class="font-semibold">Rokib Hossain</h1>
                 <p>Food expert</p>
                 <div class="flex justify-center items-center mt-3">
@@ -313,7 +338,11 @@
                 </div>
               </div>
               <div class="text-center mx-20">
-                <img src="images/member4.png" alt="" class="w-32 my-4" />
+                <img
+                  src="images/member4.png"
+                  alt=""
+                  class="w-32 md:ml-0 ml-14 mb-4 my-4"
+                />
 
                 <h1 class="font-semibold">Chaity</h1>
                 <p>Food expert</p>
@@ -328,13 +357,15 @@
         </div>
       </section>
     </main>
-    <footer class="bg-sky-950 text-white p-20 justify-center">
+    <footer class="bg-sky-950 text-white md:w-full md:ml-20 lg:ml-0 p-20">
       <div>
         <div class="flex justify-center items-center gap-4">
           <img src="images/logo.png" alt="" class="h-12" />
           <a class="text-3xl normal-case font-extrabold">Fruit Burst</a>
         </div>
-        <div class="flex justify-center items-center gap-6 mt-10">
+        <div
+          class="md:flex justify-center items-center grid grid-cols-3 gap-6 mt-10"
+        >
           <div>Home</div>
           <div>About Us</div>
           <div>Shop</div>
@@ -343,7 +374,9 @@
           <div>My Account</div>
         </div>
         <div>
-          <div class="flex justify-center items-center gap-4 mt-10">
+          <div
+            class="md:flex justify-center items-center grid grid-cols-3 gap-4 mt-10"
+          >
             <a href=""><img src="images/t.png" alt="" /></a>
             <a href=""><img src="images/f.png" alt="" /></a>
             <a href=""><img src="images/y.png" alt="" /></a>
