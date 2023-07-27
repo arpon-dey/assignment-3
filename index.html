@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,11 +15,18 @@
         },
       };
     </script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Assignment-3</title>
   </head>
   <body>
     <header>
-      <nav class="bg-red-400 w-3/4 mx-auto my-8 rounded-full">
+      <!-- <nav class="bg-red-400 w-3/4 mx-auto my-8 rounded-full">
         <div class="flex justify-between items-center mx-5">
           <div class="flex gap-4 ms-5 font-semibold text-white">
             <div>Home</div>
@@ -38,9 +45,224 @@
             <img src="images/searchIcon.png" alt="" class="w-5" />
           </div>
         </div>
-      </nav>
+      </nav> -->
+
+      <!-- <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:navbar-center navbar-start">
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-end hidden lg:flex-none">
+          <button class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+        </div>
+      </div> -->
+
+      <header class="md:w-3/4 md:mx-48 px-4 md:px-0">
+        <div
+          class="navbar flex justify-between my-8 py-3 md:bg-red-400 md:text-white rounded-full"
+        >
+          <!-- dropdown  -->
+          <div class="lg:hidden dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 text-black font-semibold"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <!-- dropdown end -->
+          <div class="hidden lg:flex">
+            <ul class="menu dropdown-end menu-horizontal px-1 font-semibold">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="gap-4 flex justify-center">
+            <img src="images/logo.png" alt="" class="h-12" />
+            <a class="text-3xl normal-case font-extrabold">Fruit Burst</a>
+          </div>
+
+          <div class="hidden lg:block relative">
+            <input
+              type="text"
+              placeholder="Search"
+              class="input w-72 rounded-full"
+            />
+            <div class="icon absolute right-6 top-2 mt-2">
+              <img src="images/searchIcon.png" alt="" class="w-5" />
+            </div>
+          </div>
+        </div>
+      </header>
     </header>
-    <main></main>
+
+    <main>
+      <section class="relative">
+        <div
+          class="carousel md:w-3/4 md:mx-48 h-60 md:h-72 lg:h-full bg-black rounded-lg"
+        >
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full opacity-70" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle bg-white">❮</a>
+              <a href="#slide2 " class="btn btn-circle bg-white">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner2.png" class="w-full opacity-70" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle bg-white">❮</a>
+              <a href="#slide3 " class="btn btn-circle bg-white">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/banner3.png" class="w-full opacity-70" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2 " class="btn btn-circle bg-white">❮</a>
+              <a href="#slide4 " class="btn btn-circle bg-white">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full opacity-70">
+            <img src="images/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle bg-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-white">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center text-center text-white">
+          <div class="absolute top-2 lg:top-11">
+            <p class="md:mb-5 text-xl md:text-5xl lg:text-7xl font-bold">
+              Exotic tastes at your <br />
+              doorstep
+            </p>
+            <p class="mb-5">We supply highly quality organic products</p>
+            <button
+              class="py-2 px-3 md:py-3 md:px-4 lg:py-5 lg:px-6 rounded-md bg-red-500 text-white"
+            >
+              Shop Now
+            </button>
+          </div>
+        </div>
+
+        <div class="w-3/5 m-auto rounded-lg hidden lg:block">
+          <div
+            class="relative grid grid-flow-col py-10 px-16 bg-white -top-20 shadow-lg rounded-lg"
+          >
+            <div class="mx-auto">
+              <img src="./images/fruit1.png" alt="" />
+              <p class="text-center">Strawberry</p>
+            </div>
+            <div class="mx-auto">
+              <img src="./images/fruit2.png" alt="" />
+              <p class="text-center">Strawberry</p>
+            </div>
+            <div class="mx-auto">
+              <img src="./images/fruit3.png" alt="" />
+              <p class="text-center">Strawberry</p>
+            </div>
+            <div class="mx-auto">
+              <img src="./images/fruit4.png" alt="" />
+              <p class="text-center">Strawberry</p>
+            </div>
+            <div class="mx-auto">
+              <img src="./images/fruit5.png" alt="" />
+              <p class="text-center">Strawberry</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
